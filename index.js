@@ -7,7 +7,7 @@ searchBtn.addEventListener("click", renderMovies)
 
 async function renderMovies() {
 	try {
-		const response = await fetch(`http://www.omdbapi.com/?&apikey=e09cc38b&s=${input.value}`)
+		const response = await fetch(`https://www.omdbapi.com/?&apikey=e09cc38b&s=${input.value}`)
 		const data = await response.json()
 		console.log(data)
 		if (data.Response === "False") {
